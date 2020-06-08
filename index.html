@@ -37,6 +37,9 @@
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
+  <a-assets>
+    <img id ="test-image" src="assets/test.png">
+  </a-assets>
     <!-- a-nft is the anchor that defines an Image Tracking entity -->
     <!-- on 'url' use the path to the Image Descriptors created before. -->
     <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
@@ -55,7 +58,7 @@
             position="50 150 0"
         >
         </a-entity> -->
-        <a-entity geometry="primitive: box" material="color: red" scale="50 50 50" position="50 150 0"></a-entity>
+        <a-image src="#test-image"></a-image>
     </a-nft>
     <!-- static camera that moves according to the device movemenents -->
     <a-entity camera></a-entity>
