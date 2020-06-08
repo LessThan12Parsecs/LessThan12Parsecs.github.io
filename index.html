@@ -51,7 +51,14 @@
       smoothTolerance=".01"
       smoothThreshold="5"
     >
-        <a-plane color="#CCC" height="300" width="200"></a-plane>
+        <a-plane color="#CCC" height="300" width="200">
+          <a-animation attributte="rotation"
+            dur="1000"
+            from="0 0 0"
+            to="30 60 90"
+            repeat="indefinite"
+            ></a-animation>
+        </a-plane>
     </a-nft>
     <!-- static camera that moves according to the device movemenents -->
     <a-entity camera>
